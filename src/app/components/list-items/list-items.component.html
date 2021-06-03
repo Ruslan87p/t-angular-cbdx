@@ -1,0 +1,15 @@
+<div class="list-wrapper" *ngIf="listItems; else loading">
+    <div class="card" *ngFor="let item of listItems">
+        <h4>{{item.API}}</h4>
+        <p>{{item.Description | slice:0:30 }}...</p>
+        <a routerLink="{{item.Link}}" target="_blank"> View Docs </a>
+            <div class="category">
+                <span>{{item.Category}}</span>
+                <span>{{getProtocol(item.HTTPS)}}</span>
+            </div>
+    </div>
+</div>
+
+<ng-template #loading>
+    <h1>Loading...</h1>
+</ng-template>

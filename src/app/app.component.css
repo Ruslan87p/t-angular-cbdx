@@ -1,0 +1,20 @@
+app-side-bar {
+    position: fixed;
+    left: 0;
+    width: 100%;
+    max-width: 400px;
+    z-index: 2;
+}
+
+app-header {
+    position: fixed;
+    z-index: 3;
+}
+app-list-items {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    width: calc(100% - 400px);
+    height: calc(100vh - 200px);
+}

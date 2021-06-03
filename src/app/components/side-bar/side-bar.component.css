@@ -1,0 +1,18 @@
+
+aside {
+    margin-top: 200px;
+    height: calc(100vh - 200px);
+    padding-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 1px solid grey;
+}
+.select-wrapper {
+    margin: 10px 0;
+}
+select {
+    width: 100%;
+    min-width: 250px;
+}
